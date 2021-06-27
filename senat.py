@@ -4,8 +4,6 @@ import scipy as sci
 
 from matplotlib import pyplot as plt
 import seaborn as sns
-#import plotly.plotly as py
-#from plotly.offline import download_plotlyjs,plot,iplot
 
 data_input = pd.read_csv('USSenate.csv')
 data = data_input.copy()
@@ -85,13 +83,3 @@ ax_3 = sns.boxplot(x='candidate votes',y='candidate_party',
                    data=data_cl[['candidate_party','candidate votes']],
                    orient='h',palette='Set3')
 plt.show()
-
-
-
-
-
-
-
-
-
-
